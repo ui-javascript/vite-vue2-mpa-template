@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import * as path from 'path';
-import { createVitePlugins } from './config'
+import { createVitePlugins } from './vite.entry.config'
 
 function resolve(dir) {
   return path.resolve(__dirname, dir);
@@ -9,14 +9,14 @@ function resolve(dir) {
 export default defineConfig({
   server: {
     // 代理
-    host: '0.0.0.0',
-    port: '8878',
-    proxy: {
-      '^/api': {
-        target: 'https://XXX.com.cn',
-        changeOrigin: true,
-      },
-    },
+    // host: '0.0.0.0',
+    // port: '3000',
+    // proxy: {
+    //   '^/api': {
+    //     target: 'https://XXX.com.cn',
+    //     changeOrigin: true,
+    //   },
+    // },
   },
   plugins: [
     createVitePlugins()

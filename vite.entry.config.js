@@ -1,7 +1,7 @@
 import mpa from 'vite-plugin-mpa'; // 多页面处理
 import VitePluginVue2Suffix from 'vite-plugin-vue2-suffix'; // 文件后缀处理
 import { createVuePlugin } from 'vite-plugin-vue2';
-import HtmlScriptPlugin from "./utils";
+import HtmlScriptPlugin from "./vite.entry.utils";
 import styleImport from "vite-plugin-style-import";
 
 export function createVitePlugins() {
@@ -9,10 +9,10 @@ export function createVitePlugins() {
     VitePluginVue2Suffix(),
     createVuePlugin(),
     mpa({
-      scanDir: 'pages',
+      scanDir: '__demo',
       scanFile: 'main.js',
       filename: 'index.html',
-      open: false
+      open: true
     }),
 
 

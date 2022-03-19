@@ -5,13 +5,13 @@
   "repository": "https://github.com/selene-y/vite-vue2-mpa-demo.git",
   "author": "selene-y <selene.yehh@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "mockjs": "^1.1.0",
-    "vant": "^2.12.30"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build"
+  },
+  "dependencies": {
+    "mockjs": "^1.1.0",
+    "vant": "^2.12.30"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
