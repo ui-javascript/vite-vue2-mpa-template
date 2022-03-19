@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import * as path from 'path';
-import { createVitePlugins } from './vite-plugin'
+import { createVitePlugins } from './config'
 
 function resolve(dir) {
   return path.resolve(__dirname, dir);

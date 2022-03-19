@@ -10,7 +10,8 @@
     "vant": "^2.12.30"
   },
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
